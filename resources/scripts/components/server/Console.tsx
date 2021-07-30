@@ -66,7 +66,7 @@ const CommandInput = styled.input`
 `;
 
 export default () => {
-    const TERMINAL_PRELUDE = '\u001b[1m\u001b[33mcontainer@pterodactyl~ \u001b[0m';
+    const TERMINAL_PRELUDE = '\u001b[1m\u001b[33m简幻云系统提示~ \u001b[0m';
     const ref = useRef<HTMLDivElement>(null);
     const terminal = useMemo(() => new Terminal({ ...terminalProps }), []);
     const fitAddon = new FitAddon();
@@ -103,7 +103,7 @@ export default () => {
     );
 
     const handlePowerChangeEvent = (state: string) => terminal.writeln(
-        TERMINAL_PRELUDE + 'Server marked as ' + state + '...\u001b[0m',
+        TERMINAL_PRELUDE + '您的服务器当前状态 ' + state + '...\u001b[0m',
     );
 
     const handleCommandKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
@@ -219,7 +219,7 @@ export default () => {
                     <div css={tw`w-full`}>
                         <CommandInput
                             type={'text'}
-                            placeholder={'Type a command...'}
+                            placeholder={'在这里输入命令奥'}
                             aria-label={'Console command input.'}
                             disabled={!instance || !connected}
                             onKeyDown={handleCommandKeyDown}

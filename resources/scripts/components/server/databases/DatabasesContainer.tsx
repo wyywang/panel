@@ -55,9 +55,9 @@ export default () => {
                             :
                             <p css={tw`text-center text-sm text-neutral-300`}>
                                 {databaseLimit > 0 ?
-                                    'It looks like you have no databases.'
+                                    '没数据奥'
                                     :
-                                    'Databases cannot be created for this server.'
+                                    '没创建数据库奥'
                                 }
                             </p>
                         }

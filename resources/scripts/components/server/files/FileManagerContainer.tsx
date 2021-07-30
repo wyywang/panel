@@ -82,7 +82,7 @@ export default () => {
                                 css={tw`flex-1 sm:flex-none sm:mt-0`}
                             >
                                 <Button css={tw`w-full`}>
-                                    New File
+                                    创建新文件
                                 </Button>
                             </NavLink>
                         </div>
@@ -96,7 +96,7 @@ export default () => {
                     <>
                         {!files.length ?
                             <p css={tw`text-sm text-neutral-400 text-center`}>
-                                This directory seems to be empty.
+                                这里没有东西奥
                             </p>
                             :
                             <CSSTransition classNames={'fade'} timeout={150} appear in>
@@ -104,8 +104,7 @@ export default () => {
                                     {files.length > 250 &&
                                     <div css={tw`rounded bg-yellow-400 mb-px p-3`}>
                                         <p css={tw`text-yellow-900 text-sm text-center`}>
-                                            This directory is too large to display in the browser,
-                                            limiting the output to the first 250 files.
+                                            太多啦 就显示前250个文件叭。
                                         </p>
                                     </div>
                                     }

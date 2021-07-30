@@ -165,9 +165,9 @@ const FileDropdownMenu = ({ file }: { file: FileObject }) => {
                 )}
             >
                 <Can action={'file.update'}>
-                    <Row onClick={() => setModal('rename')} icon={faPencilAlt} title={'Rename'}/>
-                    <Row onClick={() => setModal('move')} icon={faLevelUpAlt} title={'Move'}/>
-                    <Row onClick={() => setModal('chmod')} icon={faFileCode} title={'Permissions'}/>
+                    <Row onClick={() => setModal('rename')} icon={faPencilAlt} title={'重命名'}/>
+                    <Row onClick={() => setModal('move')} icon={faLevelUpAlt} title={'移动'}/>
+                    <Row onClick={() => setModal('chmod')} icon={faFileCode} title={'权限'}/>
                 </Can>
                 {file.isFile &&
                 <Can action={'file.create'}>

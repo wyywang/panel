@@ -152,7 +152,7 @@ export default () => {
                     :
                     <Can action={'file.create'}>
                         <Button css={tw`flex-1 sm:flex-none`} onClick={() => setModalVisible(true)}>
-                            Create File
+                            创建文件
                         </Button>
                     </Can>
                 }

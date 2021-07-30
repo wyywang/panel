@@ -94,7 +94,7 @@ export default ({ className }: WithClassname) => {
                     <div css={tw`w-full flex items-center justify-center`} style={{ pointerEvents: 'none' }}>
                         <InnerContainer>
                             <p css={tw`text-lg text-neutral-200 text-center`}>
-                                Drag and drop files to upload.
+                                文件拖进来上传奥
                             </p>
                         </InnerContainer>
                     </div>
@@ -122,7 +122,7 @@ export default ({ className }: WithClassname) => {
                         : setVisible(true);
                 }}
             >
-                Upload
+                上传文件
             </Button>
         </>
     );

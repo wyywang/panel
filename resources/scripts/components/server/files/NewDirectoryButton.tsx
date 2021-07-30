@@ -19,7 +19,7 @@ interface Values {
 }
 
 const schema = object().shape({
-    directoryName: string().required('A valid directory name must be provided.'),
+    directoryName: string().required('地址错误，重新输入'),
 });
 
 const generateDirectoryData = (name: string): FileObject => ({
@@ -90,7 +90,7 @@ export default ({ className }: WithClassname) => {
                                 label={'Directory Name'}
                             />
                             <p css={tw`text-xs mt-2 text-neutral-400 break-all`}>
-                                <span css={tw`text-neutral-200`}>This directory will be created as</span>
+                                <span css={tw`text-neutral-200`}>目录将会被创建在：</span>
                                 &nbsp;/home/container/
                                 <span css={tw`text-cyan-200`}>
                                     {join(directory, values.directoryName).replace(/^(\.\.\/|\/)+/, '')}
@@ -98,7 +98,7 @@ export default ({ className }: WithClassname) => {
                             </p>
                             <div css={tw`flex justify-end`}>
                                 <Button css={tw`mt-8`}>
-                                    Create Directory
+                                    创建目录
                                 </Button>
                             </div>
                         </Form>
@@ -106,7 +106,7 @@ export default ({ className }: WithClassname) => {
                 )}
             </Formik>
             <Button isSecondary onClick={() => setVisible(true)} className={className}>
-                Create Directory
+                创建目录
             </Button>
         </>
     );
