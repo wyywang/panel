@@ -170,7 +170,7 @@ export default ({ backup }: Props) => {
                         <Can action={'backup.download'}>
                             <DropdownButtonRow onClick={doDownload}>
                                 <FontAwesomeIcon fixedWidth icon={faCloudDownloadAlt} css={tw`text-xs`}/>
-                                <span css={tw`ml-2`}>Download</span>
+                                <span css={tw`ml-2`}>下载</span>
                             </DropdownButtonRow>
                         </Can>
                         <Can action={'backup.restore'}>
@@ -192,7 +192,7 @@ export default ({ backup }: Props) => {
                                 {!backup.isLocked &&
                                 <DropdownButtonRow danger onClick={() => setModal('delete')}>
                                     <FontAwesomeIcon fixedWidth icon={faTrashAlt} css={tw`text-xs`}/>
-                                    <span css={tw`ml-2`}>Delete</span>
+                                    <span css={tw`ml-2`}>删除</span>
                                 </DropdownButtonRow>
                                 }
                             </>
